@@ -1,0 +1,83 @@
+body {
+  color: #fff;
+  background: #17181c;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 0.5em 0.5em;
+  position: relative;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyright {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+footer .copyright a {
+  color: #444;
+}
+footer .copyright a:hover {
+  color: #555;
+}
+footer .copyright:before {
+  content: '©';
+}
+
+.buttonUp {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #30c5ff;
+  margin: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color .3s;
+  z-index: 1000;
+  color: #30c5ff;
+  cursor: pointer;
+}
+
+.buttonUp::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 40px;
+  color: #30c5ff;
+}
+
+@media (min-width: 640px) {
+  header h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .buttonUp {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+.buttonUp::after {
+  font-size: 2em;
+  line-height: 50px;
+}
+}
